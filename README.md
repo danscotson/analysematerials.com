@@ -1,17 +1,17 @@
 # Analyse Materials
 
-Landing page for Analyse Materials.
+AnalyseMaterials is an umbrella site for practical software tools for analysing materials characterisation data to extract value out of your data sets. Whether your data is from microscopy, X-ray diffraction or spectroscopy, browse our suite of tools to help you get analysing.
 
-Analyse Materials is an umbrella platform for practical software tools for materials characterisation, microscopy image analysis, X-ray diffraction visualisation and reproducible research workflows.
+Dr Dan Scotson is an EPSRC Doctoral Prize Fellow at The University of Manchester.
 
 ## Current tools
 
 - MORPHSIS
 - visXRD
-- ScaleBarIt
+- ScaleBarIT
+- HowBig
+- SDSD
 
 ## Website
 
-Custom domain:
-
-analysematerials.com
+Website domain is at analysematerials.com
