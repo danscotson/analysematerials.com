@@ -1,4 +1,4 @@
-# Analyse Materials
+# AnalyseMaterials
 
 AnalyseMaterials is an umbrella site for practical software tools for analysing materials characterisation data to extract value out of your data sets. Whether your data is from microscopy, X-ray diffraction or spectroscopy, browse our suite of tools to help you get analysing.
 
