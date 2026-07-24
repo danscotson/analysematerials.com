@@ -756,6 +756,8 @@ a {
     .nav-container {
         align-items: flex-start;
         flex-direction: column;
+        width: 180px;
+        height: 225px;
     }
 
     .site-nav {
