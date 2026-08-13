@@ -404,6 +404,22 @@ h3 {
     padding: 20px 24px;
 }
 
+.software-screenshot {
+    aspect-ratio: 3 / 2;
+    overflow: hidden;
+    border-bottom: 1px solid var(--colour-border);
+    background: #ffffff;
+}
+
+.software-screenshot img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+
 .peak {
     display: block;
     width: 10px;
@@ -691,6 +707,10 @@ h3 {
         transform: none;
     }
 
+    .software-card:hover .software-screenshot img {
+    transform: scale(1.03);
+}
+
     .contact-photo img {
         max-width: 230px;
     }
@@ -719,9 +739,6 @@ h3 {
         border-radius: 22px;
     }
 
-    .software-icon {
-        min-height: 170px;
-    }
 
     .footer-container {
         display: block;
