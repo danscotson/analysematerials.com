@@ -207,31 +207,24 @@ h3 {
 }
 
 .hero-panel {
-    position: relative;
-    width: min(100%, 520px);
+    width: 100%;
+    max-width: 800px;
     margin-inline: auto;
-    min-height: clamp(300px, 42vw, 420px);
 }
 
-.hero-card {
-    background: #ffffff;
+.hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+
+    border-radius: 24px;
     border: 1px solid var(--colour-border);
-    border-radius: var(--radius-large);
-    box-shadow: var(--shadow-soft);
+
+    box-shadow:
+        0 25px 60px rgba(23, 33, 38, 0.18);
 }
 
-.hero-card-main {
-    position: relative;
-    min-height: clamp(300px, 36vw, 380px);
-    padding: clamp(18px, 4vw, 24px);
-    overflow: hidden;
-}
 
-.hero-window-bar {
-    display: flex;
-    gap: 8px;
-    margin-bottom: clamp(24px, 5vw, 34px);
-}
 
 .hero-window-bar span {
     width: 12px;
@@ -240,77 +233,8 @@ h3 {
     background: var(--colour-border);
 }
 
-.hero-plot {
-    position: relative;
-    height: clamp(170px, 25vw, 210px);
-}
 
-.plot-line {
-    position: absolute;
-    left: 18px;
-    right: 18px;
-    height: 4px;
-    border-radius: 999px;
-    background: var(--colour-primary);
-}
 
-.plot-line-one {
-    bottom: 20%;
-    transform: rotate(-8deg);
-}
-
-.plot-line-two {
-    bottom: 46%;
-    width: 72%;
-    background: #6cc8cc;
-    transform: rotate(7deg);
-}
-
-.plot-line-three {
-    bottom: 72%;
-    width: 54%;
-    background: #1f3b43;
-    transform: rotate(-13deg);
-}
-
-.hero-chip-row {
-    margin-top: 28px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.hero-chip-row span,
-.floating-badge {
-    padding: 9px 14px;
-    border-radius: 999px;
-    background: var(--colour-primary-light);
-    color: var(--colour-primary-dark);
-    font-size: 0.86rem;
-    font-weight: 800;
-}
-
-.floating-badge {
-    position: absolute;
-    box-shadow: var(--shadow-soft);
-    border: 1px solid rgba(3, 152, 158, 0.12);
-    background: #ffffff;
-}
-
-.badge-one {
-    top: 24px;
-    right: -10px;
-}
-
-.badge-two {
-    bottom: 100px;
-    left: -28px;
-}
-
-.badge-three {
-    right: 26px;
-    bottom: 10px;
-}
 
 .software-section,
 .resources-section {
