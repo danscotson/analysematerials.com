@@ -405,7 +405,8 @@ h3 {
 }
 
 .software-screenshot {
-    aspect-ratio: 3 / 2;
+    width: 100%;
+    height: auto;
     overflow: hidden;
     border-bottom: 1px solid var(--colour-border);
     background: #ffffff;
@@ -413,9 +414,8 @@ h3 {
 
 .software-screenshot img {
     width: 100%;
-    height: 100%;
     display: block;
-    object-fit: cover;
+    height: auto;
     transition: transform 0.3s ease;
 }
 
