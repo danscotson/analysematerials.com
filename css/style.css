@@ -670,3 +670,9 @@ h3 {
         margin-top: 8px;
     }
 }
+
+@media (max-width: 700px) {
+    .software-grid {
+        grid-template-columns: 1fr;
+    }
+}
