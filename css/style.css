@@ -425,8 +425,9 @@ h3 {
     color: var(--colour-primary-dark);
     border-bottom: 2px solid var(--colour-primary-light);
     text-decoration: none;
-    font-weight: 800;
-}
+    font-weight: 600;
+    font-size: 0.95rem;
+
 
 .software-link:hover,
 .software-link:focus-visible {
