@@ -1,6 +1,6 @@
 :root {
-    --colour-primary: #03989e;
-    --colour-primary-dark: #02777c;
+    --colour-primary: #02777c;
+    --colour-primary-dark: #015d61;
     --colour-primary-light: #e6f7f8;
     --colour-text: #172126;
     --colour-muted: #5f7078;
@@ -36,6 +36,7 @@ body {
 
 img {
     max-width: 100%;
+    height: auto;
     display: block;
 }
 
@@ -339,6 +340,19 @@ h3 {
     transition: transform 0.3s ease;
 }
 
+.software-screenshot--logo {
+    aspect-ratio: 3 / 2;
+    display: grid;
+    place-items: center;
+    padding: 24px;
+}
+
+.software-screenshot--logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
 
 .peak {
     display: block;
@@ -532,17 +546,41 @@ h3 {
     font-size: 1.08rem;
 }
 
-.contact-content .button-primary {
-    margin-top: 18px;
-    background: #ffffff;
-    color: var(--colour-primary-dark);
+.profile-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 28px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.profile-link {
+    display: inline-flex;
+    width: 48px;
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: var(--radius-small);
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.profile-link img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+.profile-link:hover,
+.profile-link:focus-visible {
+    background: rgba(255, 255, 255, 0.16);
     border-color: #ffffff;
 }
 
-.contact-content .button-primary:hover,
-.contact-content .button-primary:focus-visible {
-    background: var(--colour-primary-light);
-    border-color: var(--colour-primary-light);
+.profile-link:focus-visible {
+    outline: 3px solid #ffffff;
+    outline-offset: 4px;
 }
 
 .site-footer {
@@ -580,10 +618,24 @@ h3 {
 
     .hero-panel {
         order: -1;
+        max-width: 320px;
+    }
+
+    .hero-container {
+        padding-top: 40px;
+        gap: 28px;
+    }
+
+    .contact-photo img {
+        max-width: 200px;
     }
 
     .contact-content {
         text-align: center;
+    }
+
+    .profile-links {
+        justify-content: center;
     }
 }
 
@@ -607,7 +659,8 @@ h3 {
     }
 
     .hero-container {
-        padding-top: 44px;
+        padding-top: 32px;
+        gap: 24px;
     }
 
     .floating-badge {
@@ -618,10 +671,25 @@ h3 {
 
     .hero-panel {
         min-height: auto;
+        max-width: 240px;
     }
 
     .software-grid {
         grid-template-columns: 1fr;
+    }
+
+    .software-screenshot {
+        aspect-ratio: auto;
+        height: clamp(188px, 50vw, 260px);
+        display: grid;
+        place-items: center;
+    }
+
+    .software-screenshot img {
+        width: 100%;
+        height: 100%;
+        min-height: 0;
+        object-fit: contain;
     }
 
     .software-card:hover,
@@ -634,7 +702,7 @@ h3 {
 }
 
     .contact-photo img {
-        max-width: 230px;
+        max-width: 180px;
     }
 }
 
@@ -674,5 +742,25 @@ h3 {
 @media (max-width: 700px) {
     .software-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    .button,
+    .software-card,
+    .software-screenshot img {
+        transition: none;
+    }
+
+    .button:hover,
+    .button:focus-visible,
+    .software-card:hover,
+    .software-card:focus-within,
+    .software-card:hover .software-screenshot img {
+        transform: none;
     }
 }

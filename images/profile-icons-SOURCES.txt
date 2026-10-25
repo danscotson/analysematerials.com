@@ -1,0 +1,6 @@
+GitHub, LinkedIn and email icons: Font Awesome Free, https://fontawesome.com/ (CC BY 4.0; see profile-icons-LICENSE.txt). White fill used for the dark contact section.
+ORCID iD icon: https://orcid.org/assets/vectors/orcid.logo.icon.svg
+ORCID marks belong to ORCID, Inc.; https://info.orcid.org/brand-guidelines/
+Zenodo icon: https://about.zenodo.org/static/img/icons/zenodo-icon-white.svg
+Zenodo branding: https://about.zenodo.org/#logo
+Brand marks remain the property of their respective owners.
