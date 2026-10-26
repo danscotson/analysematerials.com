@@ -119,9 +119,13 @@
                 </article>
 
                 <article class="software-card">
-                   <div class="software-screenshot">
-   <img src="images/scalebarit-logo.webp" alt="ScaleBarIT logo" width="900" height="600" loading="lazy" decoding="async">
-</div>
+                    <div class="software-screenshot software-screenshot--scalebarit">
+                        <picture>
+                            <source media="(max-width: 500px)" srcset="images/scalebarit-logo-phone.webp" width="1000" height="500">
+                            <source media="(max-width: 768px)" srcset="images/scalebarit-logo-tablet.webp" width="1440" height="480">
+                            <img src="images/scalebarit-logo-square.webp" alt="ScaleBarIT logo" width="500" height="500" loading="lazy" decoding="async">
+                        </picture>
+                    </div>
                     <div class="software-content">
                         <p class="software-type">Communicating results</p>
                         <h3>ScaleBarIT</h3>
